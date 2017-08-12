@@ -429,10 +429,10 @@ public final class Indexer {
         list.add(currentClass);
     }
 
-    private boolean isJDK11OrNewer(DataInputStream stream) throws IOException {
+    private boolean isJDK11ToJDK8(DataInputStream stream) throws IOException {
         int minor = stream.readUnsignedShort();
         int major = stream.readUnsignedShort();
-        return major > 45 || (major == 45 && minor >= 3);
+        return (major > 45 && major < 53) || (major == 45 && minor >= 3);
     }
 
     private void verifyMagic(DataInputStream stream) throws IOException {
@@ -698,7 +698,7 @@ public final class Indexer {
 
             // Retroweaved classes may contain annotations
             // Also, hierarchy info is needed regardless
-            if (!isJDK11OrNewer(data))
+            if (!isJDK11ToJDK8(data))
                 return null;
 
             initIndexMaps();
