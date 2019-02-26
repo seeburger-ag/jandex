@@ -26,6 +26,12 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git@github.com:seeburger-ag/jandex.git</connection>
+        <developerConnection>scm:git:git@github.com:seeburger-ag/jandex.git</developerConnection>
+        <url>https://github.com/seeburger-ag/jandex</url>
+    </scm>
+
     <build>
         <plugins>
             <plugin>
