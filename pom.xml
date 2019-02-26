@@ -1,5 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <properties>
         <jandexVersion>1.2.5.SEE1-SNAPSHOT</jandexVersion>
@@ -14,7 +13,7 @@
         <version>12</version>
     </parent>
     <artifactId>jandex</artifactId>
-    <version>${jandexVersion}</version>
+    <version>1.2.5.SEE1</version>
     <name>Java Annotation Indexer</name>
     <packaging>bundle</packaging>
 
@@ -30,7 +29,8 @@
         <connection>scm:git:git@github.com:seeburger-ag/jandex.git</connection>
         <developerConnection>scm:git:git@github.com:seeburger-ag/jandex.git</developerConnection>
         <url>https://github.com/seeburger-ag/jandex</url>
-    </scm>
+      <tag>jandex-1.2.5.SEE1.b</tag>
+  </scm>
 
     <build>
         <pluginManagement>
