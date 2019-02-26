@@ -13,7 +13,7 @@
         <version>12</version>
     </parent>
     <artifactId>jandex</artifactId>
-    <version>1.2.5.SEE1</version>
+    <version>1.2.5.SEE2-SNAPSHOT</version>
     <name>Java Annotation Indexer</name>
     <packaging>bundle</packaging>
 
@@ -29,7 +29,7 @@
         <connection>scm:git:git@github.com:seeburger-ag/jandex.git</connection>
         <developerConnection>scm:git:git@github.com:seeburger-ag/jandex.git</developerConnection>
         <url>https://github.com/seeburger-ag/jandex</url>
-      <tag>jandex-1.2.5.SEE1.b</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <build>
